@@ -58,8 +58,8 @@
     flex-direction: column;
     position: absolute;
     width: 55%;
-    height: 100vh;
-    top: -70px;
+    height: 100%;
+    top: -100px;
     padding-bottom: 50px;
     left: -55%;
     background-color: rgb(173, 216, 230, 0.95);
