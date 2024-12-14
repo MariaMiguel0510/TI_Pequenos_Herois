@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contactos </title>
+  <link rel="stylesheet" href="CSS/comuns.css">
+  <link rel="stylesheet" href="CSS/comuns_telemovel.css">
+  <link rel="stylesheet" href="CSS/Contactos.css">
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header>
+    <a class="logoH" href="index.html">
+      <img srcset="Imagens/Homepage/Logo-B.png 480w, Imagens/Homepage/Logo-B.png 1600w" sizes="(max-width: 600px) 480px,
+             800px" src="Imagens/Homepage/Logo-B.png" alt="logo">
+    </a>
+
+    <div class="burguerBotao">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav class="menu">
+      <a id="missoes" href="Missoes.html">Missões</a>
+      <a id="herois" href="Herois.html">Heróis</a>
+      <a id="sobreNos" href="SobreNos.html">Sobre Nós</a>
+      <a id="contact" href="Contactos.html">Contactos</a>
+      <a id="noticias" href="Noticias.html">Notícias</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <div class="imgInicio">
+        <picture>
+          <source media="(max-width: 576px)" srcset="Imagens/Contactos/CBanner-S.jpg" width="576" height="463">
+          <source media="(min-width: 992px)" srcset="Imagens/Contactos/CBanner-B.jpg" width="1920" height="790">
+          <img src="Imagens/Contactos/CBanner-B.jpg" alt="imagem_antes_texto">
+        </picture>
+        <div class="titulo">
+          <h1>Contactos</h1>
+      </div>
+      </div>
+
+      <div class="citacao">
+        <div>
+          <div class="retangulos" id="first"></div>
+          <div class="retangulos" id="second"></div>
+        </div>
+        <div class="frase">
+          <h2 class="fraseInsp">A solidariedade é o espelho onde a amizade, o amor e a caridade se refletem</h2>
+        </div>
+      </div>
+
+      <section>
+        <div class="antesContactos">
+          <picture>
+            <source media="(max-width:800px)" srcset="Imagens/Contactos/CCoimbra-S.jpg">
+            <source media="(min-width:800px)" srcset="Imagens/Contactos/CCoimbra-B.jpg">
+            <img src="Imagens/Contactos/CCoimbra-B.jpg" alt="imagem_antes_texto">
+          </picture>
+
+          <div class="textoContactos">
+            <h2>Sede</h2>
+            <ul>
+              <li>Rua do Brasil, Lote 5, 3030-175 Coimbra</li>
+              <li>Telefone: +(239)9123917916</li>
+              <li>Email: pequenosherois@aph</li>
+              <li>NIF: 123456789</li>
+              <li>Segunda a Sexta: 09:00 – 18:00</li>
+              <li>Fins de Semana e Feriados: Encerrado</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="formContactos">
+        <h2 class="tituloForm">Envie-nos um email!</h2>
+
+        <div class="formulario" id="msgForm">
+          <form class="conteudoForm" action="formulario.php" method="GET">
+
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" name="nome" placeholder="Obrigada!" required>
+
+            <label for="nome">Email</label>
+            <input id="email" type="email" name="email" placeholder="pequenosherois@aph" required>
+
+            <label for="nome">Assunto</label>
+            <input id="assunto" type="text" name="assunto" placeholder="Associação Pequenos Heróis" required>
+
+            <label for="nome">Mensagem</label>
+            <input id="mensagem" type="text" name="mensagem" placeholder="Obrigada!" required>
+            <input type="submit">
+          </form>
+        </div>
+      </section>
+
+      <picture>
+        <source media="(max-width:800px)" srcset="Imagens/Contactos/MapaS.jpg">
+        <source media="(min-width:800px)" srcset="Imagens/Contactos/MapaB.jpg">
+        <img id="imgMapa" src="Imagens/Contactos/MapaB.jpg" alt="loacalizacao_mapa">
+      </picture>
+
+    </article>
+  </main>
+
+
+  <div>
+    <!--Botão de regressar ao início da página-->
+    <button id="inicio"><svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+      </svg></button>
+    <!--Botões de Doar e Voluntariado-->
+    <div class="botoesLat">
+      <nav>
+        <a class="botao" id="doar" href="Missoes.html#formDoar">Doar</a>
+        <a class="botao" id="volt" href="Missoes.html#formVoluntariado">Voluntariado</a>
+      </nav>
+    </div>
+  </div>
+
+  <!--Rodapé-->
+  <footer>
+    <div class="textoFooter" id="contactos">
+      <h4 class="tituloFooter">Contactos</h4>
+      <ul>
+        <li>Email: pequenosherois@aph</li>
+        <li>Telefone: +(239)9123917916</li>
+        <li>Morada: Rua do Brasil, Coimbra</li>
+      </ul>
+    </div>
+
+    <div class="textoFooter" id="servicos">
+      <h4 class="tituloFooter">Serviços</h4>
+      <ul>
+        <li>Relatar problemas de segurança</li>
+        <li>Informe infração dos direitos humanos</li>
+        <li>Aviso de marca registrada</li>
+      </ul>
+    </div>
+
+    <div class="textoFooter" id="seguranca">
+      <h4 class="tituloFooter">Segurança</h4>
+      <ul>
+        <li>Desenvolvimento académico e social</li>
+        <li>Advocacia e defesa</li>
+        <li>Empoderamento e habilidades</li>
+      </ul>
+    </div>
+    <img class="logoF" src="Imagens/Homepage/Logo-S.png" width="90" height="30" alt="logo_da_fundacao">
+
+    <p>COPYRIGHT © 2023 Associação Pequenos Heróis</p>
+  </footer>
+
+  <script src="JavaScript/comum.js"></script>
+</body>
+
+</html>

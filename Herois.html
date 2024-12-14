@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Heróis </title>
+  <link rel="stylesheet" href="CSS/comuns.css">
+  <link rel="stylesheet" href="CSS/comuns_telemovel.css">
+  <link rel="stylesheet" href="CSS/Herois.css">
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header>
+    <a class="logoH" href="index.html">
+      <img srcset="Imagens/Homepage/Logo-B.png 480w, Imagens/Homepage/Logo-B.png 1600w" sizes="(max-width: 600px) 480px,
+             800px" src="Imagens/Homepage/Logo-B.png" alt="logo">
+    </a>
+
+    <div class="burguerBotao">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav class="menu">
+      <a id="missoes" href="Missoes.html">Missões</a>
+      <a id="herois" href="Herois.html">Heróis</a>
+      <a id="sobreNos" href="SobreNos.html">Sobre Nós</a>
+      <a id="contact" href="Contactos.html">Contactos</a>
+      <a id="noticias" href="Noticias.html">Notícias</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <div class="imgInicio">
+        <picture>
+          <source media="(max-width:576px)" srcset="Imagens/Herois/HBanner-S.jpg" width="576" height="463">
+          <source media="(min-width:992px)" srcset="Imagens/Herois/HBanner-B.jpg" width="1920" height="800">
+          <img src="Imagens/Herois/HBanner-B.jpg" alt="imagem_antes_texto">
+        </picture>
+        <div class="titulo">
+          <h1>Heróis</h1>
+      </div>
+      </div>
+
+      <div class="citacao">
+        <div>
+          <div class="retangulos" id="first"></div>
+          <div class="retangulos" id="second"></div>
+        </div>
+
+        <div class="frase">
+          <h2 class="fraseInsp">O verdadeiro herói é aquele que ajuda os que mais precisam</h2>
+        </div>
+      </div>
+
+      <!--Barra de Pesquisa-->
+      <div class="barraPesquisa">
+        <div class="barra">
+          <input class="pesquisa" type="text" id="barraPesquisa" placeholder="Escreve aqui...">
+          <img width="30" height="30" src="Imagens/Herois/LupaB.png" id="lupa" alt="Lupa_barra_pesquisa">
+        </div>
+      </div>
+
+      <!--Galeria de Imagens-->
+      <div class="galeriaImg">
+
+        <div class="linhas" id="primeiraLinha">
+          <div class="card" id="oneL1">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Deborah-S.jpg">
+              <source media="(min-width: 800px)" width="350" height="200" srcset="Imagens/Herois/Deborah-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Deborah-B.jpg" alt="little-girl">
+            </picture>
+            <p class="legenda">Eu vivo numa pequena cidade no sul da Venezuela, onde não havia quaisquer escolas. A APH
+              construiu uma escola totalmente equipada no ano passado e agr já consigo ler os meus livros de contos
+              sozinha! </p>
+            <p class="nome">Deborah Valentino</p>
+          </div>
+
+          <div class="card" id="twoL1">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Pamela-S.jpg">
+              <source media="(min-width: 800px)" width="550" height="200" srcset="Imagens/Herois/Pamela-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Pamela-B.jpg" alt="little-latin-girl">
+            </picture>
+            <p class="legenda">O meu nome é Pamela e nasci muda. A escola perto da minha casa não tinha ninguém para
+              ensinar crianças como eu, mas a APH implementou um programa de ensino para crianças especiais e agora
+              posso ir à escola aprender junto dos meus irmãos.</p>
+            <p class="nome">Pamela Silva</p>
+          </div>
+        </div><!--Encerra a primeira Linha-->
+
+        <div class="linhas" id="segundaLinha">
+          <div class="card" id="oneL2">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Beatriz-S.jpg">
+              <source media="(min-width: 800px)" width="200" height="300" srcset="Imagens/Herois/Beatriz-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Beatriz-B.jpg" alt="little-black-girl">
+            </picture>
+            <p class="legenda">Onde vivo as meninas são proibidas de ir à mesma escola que os rapazes.<br>Então a APH
+              construiu um escola onde não somos excluídas e negadas ao direito de aprender.</p>
+            <p class="nome" id="nameBea">Beatriz Nayuka</p>
+          </div>
+
+          <div class="card" id="twoL2">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Twins-S.jpg">
+              <source media="(min-width: 800px)" width="480" height="300" srcset="Imagens/Herois/Twins-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Twins-B.jpg" alt="japanese-little-boys-twins">
+            </picture>
+            <p class="legenda">Nós somos de uma pequena vila do interior, onde o acesso ao ensino é muito diferente e
+              mais complicado do que nas grandes cidades...<br>A APH reabilitou recentemente a nossa escola para nos dar
+              melhores condições de ensino, como também para termos acesso às mesmas oportunidades e não ficarmos para
+              trás das crianças dos meios urbanos.</p>
+            <p class="nome" id="nameTwins">Sato Takahashi e Suzuki Takahashi</p>
+          </div>
+
+          <div class="card" id="threeL2">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Guzman-S.jpg">
+              <source media="(min-width: 800px)" width="200" height="525" srcset="Imagens/Herois/Guzman-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Guzman-B.jpg" alt="little-latin-boy">
+            </picture>
+            <p class="legenda">Eu e a minha família eramos forçados a escolher entre poder ir à escola ou sermos capazes
+              de comer.<br> Graças à Bolsa de Ensino para Crianças Carenciadas, a minha família já não tem de se
+              preocupar! A minha educação está assegurada.</p>
+            <p class="nome">Guzman Martinez</p>
+          </div>
+
+        </div><!--Encerra a segunda Linha-->
+
+        <div class="linhas" id="terceiraLinha">
+          <div class="card" id="oneL3">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Amir-S.jpg">
+              <source media="(min-width: 800px)" width="480" height="200" srcset="Imagens/Herois/Amir-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Amir-B.jpg" alt="indian-teen">
+            </picture>
+            <p class="legenda">Desde pequeno que sonho ser médico.<br>Graças à BFME (Bolsa da Fundação para a Educação
+              Médica) consegui entrar na Faculdade de Medicina e estou prestes a começar o meu ano de Residência.</p>
+            <p class="nome">Amir Kaur</p>
+          </div>
+
+          <div class="card" id="twoL3">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Lucas-S.jpg">
+              <source media="(min-width: 800px)" width="200" height="200" srcset="Imagens/Herois/Lucas-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Lucas-B.jpg" alt="little-black-boy">
+            </picture>
+            <p class="legenda">Eu não podia estudar porque tinha que ajudar a minha mãe a ganhar dinheiro. Hoje, sou um
+              aluno do 5º ano!</p>
+            <p class="nome">Lucas Lopez</p>
+          </div>
+        </div><!--Encerra a terceira Linha-->
+
+        <div class="linhas" id="quartaLinha">
+          <div class="card" id="oneL4">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Priya-S.jpg">
+              <source media="(min-width: 800px)" width="200" height="200" srcset="Imagens/Herois/Priya-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Priya-B.jpg" alt="indian-teen-girl">
+            </picture>
+            <p class="legenda">Escapei de um casamento forçado e tornei-me advogada. Tudo graças à ajuda da APH.</p>
+            <p class="nome">Priya Hindu</p>
+          </div>
+
+          <div class="card" id="twoL4">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Anishka-S.jpg">
+              <source media="(min-width: 800px)" width="700" height="200" srcset="Imagens/Herois/Anishka-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Anishka-B.jpg" alt="blonde-girl">
+            </picture>
+            <p class="legenda">Eu fugi da guerra na Ucrânia com a minha família e cheguei a Portugal sem falar uma única
+              palavra, mas através do PAIR (Programa de Apoio e Inclusão a Refugiados) da APH pude voltar à escola sem
+              correr o risco de me sentir excluída.</p>
+            <p class="nome">Aniska Nissim</p>
+          </div>
+        </div><!--Encerra a quarta Linha-->
+
+        <div class="linhas" id="quintaLinha">
+          <div class="card" id="oneL5">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Samuel-S.jpg">
+              <source media="(min-width: 800px)" width="450" height="200" srcset="Imagens/Herois/Samuel-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Samuel-B.jpg" alt="ginger-boy">
+            </picture>
+            <p class="legenda">O meu nome é Samuel e tenho Síndrome de Williams. Devido à minha condição era muito
+              difícil para mim socializar e aprender juntamente com crianças da minha idade. A APH arranjou
+              profissionais especializados que me podem ajudar a viver melhor com a minha condição e continuar a
+              aprender.</p>
+            <p class="nome">Samuel Marques</p>
+          </div>
+
+          <div class="card" id="twoL5">
+            <picture>
+              <source media="(max-width: 800px)" srcset="Imagens/Herois/Eva-S.jpg">
+              <source media="(min-width: 800px)" width="450" height="200" srcset="Imagens/Herois/Eva-B.jpg">
+              <img class="imagem" src="Imagens/Herois/Eva-B.jpg" alt="little-girl-ponytails">
+            </picture>
+            <p class="legenda">Eu tenho muitos irmãos e os meus pais não podiam comprar material escolar para todos, mas
+              a APH ajudou-nos e agora cada um de nós tem o seu próprio caderno e canetas, já não temos que os
+              reutilizar e partilhar.</p>
+            <p class="nome">Eva Santos</p>
+          </div>
+        </div><!--Encerra a quinta Linha-->
+
+
+      </div><!--Encerra o contentor/"secção" Galeria de Imagens-->
+    </article>
+  </main>
+
+  <div>
+    <!--Botão de regressar ao início da página-->
+    <button id="inicio"><svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+      </svg></button>
+    <!--Botões de Doar e Voluntariado-->
+    <div class="botoesLat">
+      <nav>
+        <a class="botao" id="doar" href="Missoes.html#formDoar">Doar</a>
+        <a class="botao" id="volt" href="Missoes.html#formVoluntariado">Voluntariado</a>
+      </nav>
+    </div>
+  </div>
+
+  <!--Rodapé-->
+  <footer>
+    <div class="textoFooter" id="contactos">
+      <h4 class="tituloFooter">Contactos</h4>
+      <ul>
+        <li>Email: pequenosherois@aph</li>
+        <li>Telefone: +(239)9123917916</li>
+        <li>Morada: Rua do Brasil, Coimbra</li>
+      </ul>
+    </div>
+
+    <div class="textoFooter" id="servicos">
+      <h4 class="tituloFooter">Serviços</h4>
+      <ul>
+        <li>Relatar problemas de segurança</li>
+        <li>Informe infração dos direitos humanos</li>
+        <li>Aviso de marca registrada</li>
+      </ul>
+    </div>
+
+    <div class="textoFooter" id="seguranca">
+      <h4 class="tituloFooter">Segurança</h4>
+      <ul>
+        <li>Desenvolvimento académico e social</li>
+        <li>Advocacia e defesa</li>
+        <li>Empoderamento e habilidades</li>
+      </ul>
+    </div>
+    <img class="logoF" src="Imagens/Homepage/Logo-S.png" width="90" height="30" alt="logo_da_fundacao">
+
+    <p>COPYRIGHT © 2023 Associação Pequenos Heróis</p>
+  </footer>
+
+  <script src="JavaScript/comum.js"></script>
+</body>
+
+</html>

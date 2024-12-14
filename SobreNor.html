@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sobre Nós </title>
+    <link rel="stylesheet" href="CSS/comuns.css">
+    <link rel="stylesheet" href="CSS/comuns_telemovel.css">
+    <link rel="stylesheet" href="CSS/SobreNos.css">
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header>
+        <a class="logoH" href="index.html">
+            <img srcset="Imagens/Homepage/Logo-B.png 480w, Imagens/Homepage/Logo-B.png 1600w" sizes="(max-width: 600px) 480px,
+               800px" src="Imagens/Homepage/Logo-B.png" alt="logo">
+        </a>
+
+        <div class="burguerBotao">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav class="menu">
+            <a id="missoes" href="Missoes.html">Missões</a>
+            <a id="herois" href="Herois.html">Heróis</a>
+            <a id="sobreNos" href="SobreNos.html">Sobre Nós</a>
+            <a id="contact" href="Contactos.html">Contactos</a>
+            <a id="noticias" href="Noticias.html">Notícias</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="imgInicio">
+                <picture>
+                    <source media="(max-width:576px)" srcset="Imagens/Sobre-Nos/SNBanner-S.jpg" width="576"
+                        height="463">
+                    <source media="(min-width:992px)" srcset="Imagens/Sobre-Nos/SNBanner-B.jpg" width="1920"
+                        height="792">
+                    <img src="Imagens/Sobre-Nos/SNBanner-B.jpg" alt="imagem_antes_texto">
+                </picture>
+                <div class="titulo">
+                    <h1>Sobre Nós</h1>
+                </div>
+            </div>
+
+            <div class="textoMain" id="textoInicial">
+                <p>A APH - Associação Pequenos Heróis, é uma instituição sem fins lucrativos, cujo o objetivo principal
+                    é apoiar crianças e jovens carenciados ao nível da educação.</p>
+                <p>A nossa missão é melhorar o conhecimento e a cultura dos mais novos e acolher os espaços
+                    sociais/educativos que frequentam de modo a melhorar as suas condições de vida e torná-las menos
+                    precárias. O nosso objetivo é deixar todas as crianças com um sorriso esperançoso no rosto!</p>
+                <p>A Associação foi fundada em 2021, depois de uma pandemia mundial ter afetado tantas crianças e
+                    jovens, colocando-os num estatuto de carência, nomeadamente de carência académica. Atuamos em
+                    qualquer parte do mundo, colocando mãos à obra seja para a construir novas escolas ou suportar os
+                    custos de manuais e materiais escolares!</p>
+            </div>
+
+            <div class="video">
+                <video class="videoSobre" controls poster="Imagens/Sobre-Nos/InicioVideo.jpg" width="800" height="450">
+                    <source src="Videos/VideoSobreNosV1.mp4" type="video/mp4">
+                    <source src="Videos/VideoSobreNosV2.mov" type="video/mov">
+                    <source src="Videos/VideoSobreNosV3.avi" type="video/avi">
+                </video>
+            </div>
+
+            <div class="textoMain" id="textoMeio">
+                <p>A Associação Pequenos Heróis conta com a parceria de diversas instituições como a DGS, DGE e ISCE.
+                </p>
+                <p>Nós acreditamos que podemos fazer a diferença! Nas capacidades únicas de cada criança e no potencial
+                    que cada uma tem para prosperar e construir uma história de vida mais gratificante e feliz.
+                    Acreditamos nas sinergias do trabalho de equipa e privilegiamos uma abordagem de cariz
+                    pluridisciplinar, que permite intervir com o ser humano em toda a sua complexidade.</p>
+                <p>A Associação Pequenos Heróis esforça-se sempre, tendo consciência do que está ou não ao seu alcance
+                    promovendo novas iniciativas para se expandir, reinventar e ultrapassar a si mesma a cada nova etapa
+                    que atinge e coloca. Intervimos tanto nível privado, quer a nível comunitário, nacional, ou
+                    internacionalmente, através da criação de parcerias e protocolos com escolas, empresas e
+                    associações. Procuramos ajudar todos os casos que nos são adjudicados e que encontramos, e por isso
+                    trabalhamos todos os dias para construir um espaço de identidade afável e profissional do conjunto
+                    dos educadores e aprendizes.</p>
+                <p>Todos os dias ficamos mais gratos pela vossa dedicação e carinho! Obrigada!</p>
+            </div>
+
+
+            <section class="team">
+                <h2 class="nomeSeccao" id="nomeSeccaoE">A Equipa</h2>
+
+                <div class="carroussel">
+
+                    <div class="botoes_Scroll" id="botoes_Scroll_Esq">
+                        <div class="seta" id="setaEsq"></div>
+                        <div class="botaoScroll" id="botaoScrollEsq"></div>
+                    </div>
+                    <div class="botoes_Scroll" id="botoes_Scroll_Drt">
+                        <div class="botaoScroll" id="botaoScrollDrt"></div>
+                        <div class="seta" id="setaDrt"></div>
+                    </div>
+
+                    <div class="scroll" id="scroll">
+                        <div class="card card0">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa1S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa1B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa1B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" id="primeiraImg" src="Imagens/Sobre-Nos/stiker4.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor1">
+                                    <p class="legenda">"Ajudar é um ato de generosidade e compaixão"</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card1">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa2S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa2B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa2B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker1.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor2">
+                                    <p class="legenda">"Ajudar é oferecer suporte e assistência a alguém em necessidade"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card2">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa3S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa3B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa3B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker2.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor1">
+                                    <p class="legenda">"Ajudar é estender <br> a mão para aliviar <br> o fardo de outra pessoa"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card3">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa4S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa4B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa4B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker3.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor2">
+                                    <p class="legenda">"Ajudar é um gesto de solidariedade e empatia"</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card4">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa5S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa5B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa5B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker4.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor1">
+                                    <p class="legenda">"Ajudar é compartilhar recursos e conhecimentos para melhorar a
+                                        vida de alguém"</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card5">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa6S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa6B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa6B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker1.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor2">
+                                    <p class="legenda">"Ajudar é um ato de bondade que pode fazer uma grande diferença
+                                        noutras vidas"</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card6">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa7S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa7B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa7B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker2.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor1">
+                                    <p class="legenda">"Ajudar é oferecer apoio emocional e encorajamento nos momentos
+                                        difíceis"</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card7">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa8S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa8B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa8B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker3.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor2">
+                                    <p class="legenda">"Ajudar é estar presente e disponível para aqueles que precisam
+                                        de nós"</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card8">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa9S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa9B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa9B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" src="Imagens/Sobre-Nos/stiker4.jpg" alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor1">
+                                    <p class="legenda">"Ajudar é um ato altruísta que fortalece os laços humanos"</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card9">
+                            <picture>
+                                <source media="(max-width: 800px)" width="162" height="243"
+                                    srcset="Imagens/Sobre-Nos/Equipa10S.jpg">
+                                <source media="(min-width: 800px)" width="200" height="300"
+                                    srcset="Imagens/Sobre-Nos/Equipa10B.jpg">
+                                <img class="imagem" src="Imagens/Sobre-Nos/Equipa10B.jpg" alt="Sample photo">
+                            </picture>
+                            <img class="stiker" id="ultimaImg" src="Imagens/Sobre-Nos/ultimoSticker.jpg"
+                                alt="Sample photo">
+                            <div class="cor">
+                                <div class="cor2">
+                                    <p class="legenda">"Ajudar é uma expressão de amor e cuidado pelo próximo"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="nomeSeccao" id="nomeSeccaoF">Sobre a Formação</h2>
+                <div class="textoMain" id="textoFinal">
+                    <p>A formação dos nossos profissionais é algo que levamos muito a sério, sendo ainda por mais nos
+                        dias de hoje uma realidade justificada pelos níveis do saber em diferentes superfícies. A
+                        Associação Pequenos Heróis defende o impacto positivo e efetivo nas comunidades atendidas já
+                        comprovado por diversos estudos e experientes na área.</p>
+                    <p>O saber agir e todas as componentes científico-humanísticas que advém de um treinamento adequado
+                        são características que a sociedade moderna exige. Isto abrange, também, a compreensão de temas
+                        mais sensíveis e habilidades para saber lidar com estes; desenvolver empatia, aprender técnicas
+                        de comunicação e apoio emocional dedicado à comunidade infantil e demais.</p>
+                    <p>Desenvolvemos atividades de formação diversificada, com oferta de ações creditadas e não
+                        creditadas. Ao receberem a nossa formação, os voluntários adquirem todas estas aptidões e
+                        conhecimentos necessários para lidar com as necessidades específicas de cada criança.</p>
+                    <p>Temos como requisito obrigatório a frequentação e presença nesta formação para integrares a nossa
+                        equipa, seja num posto fixo ou voluntário.
+                    </p>
+                    <p class="textoEscondido">Acreditamos que é fundamental que todos os profissionais que trabalham com
+                        crianças tenham uma formação sólida e abrangente. Por isso, investimos na realização de cursos,
+                        workshops e palestras com especialistas renomados em diversas áreas relacionadas ao
+                        desenvolvimento infantil. Dessa forma, garantimos que nossos profissionais estejam sempre
+                        atualizados e preparados para lidar com os desafios que surgem no dia a dia.
+                        Além disso, incentivamos a participação dos nossos profissionais em eventos e congressos da
+                        área, proporcionando oportunidades de aprendizado contínuo e troca de experiências com outros
+                        profissionais. Acreditamos que é através desse constante aperfeiçoamento e busca por
+                        conhecimento que podemos oferecer um trabalho de qualidade e efetivo para as crianças que
+                        atendemos.</p>
+                    <button id="btnOne">Ler mais</button>
+                </div>
+
+                <!--Formulários-->
+                <div class="ContentorForm">
+                    <div class="formSobre">
+                        <div class="carac">
+
+                            <h2 class="tituloForm" id="formacoes">Formação</h2>
+                        </div>
+                        <div>
+                            <form class="conteudoForm" action="formulario.php" method="GET">
+                                <div id="nome" class="carac">
+                                    <label class="textoForm" for="nombre">Nome:</label>
+                                    <input id="nombre" type="text" name="nome" placeholder="Associação Pequenos Heróis"
+                                        required>
+                                </div>
+                                <div id="date" class="carac">
+                                    <label class="textoForm" id="dataN" for="dataNasc">Data de Nascimento:</label>
+                                    <input type="date" id="dataNasc" name="data" required>
+                                </div>
+                                <div id="Tel" class="carac">
+                                    <label class="textoForm" id="telemovel" for="phone">Contacto telefónico:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+(239)9123917916" required>
+                                </div>
+                                <div id="CAIXA_MAIL" class="carac">
+                                    <label class="textoForm" for="mail">Email:</label>
+                                    <input id="mail" type="email" name="email" placeholder="pequenosherois@aph"
+                                        required>
+                                </div>
+                                <div id="LOCAL" class="carac">
+                                    <label class="textoForm" id="residencia" for="area">Área de Residência:</label>
+                                    <input id="area" type="text" name="area" placeholder="Coimbra" required>
+                                </div>
+                                <div id="Formacao_EMP" class="caracF">
+                                    <label class="question" for="selecao">Já teve alguma formação?</label>
+                                    <select id="selecao" name="Formacao">
+                                        <option value="">- Carrega para Escolher -</option>
+                                        <option value="Sim">Sim</option>
+                                        <option value="Não">Não</option>
+                                    </select>
+                                </div>
+                                <div id="Formacao_esc" class="carac">
+                                    <label class="textoForm" for="formacao">Se sim indique qual</label>
+                                    <input id="formacao" type="text" name="Formacao"
+                                        placeholder="Técnico/a de Apoio à Vítima">
+                                </div>
+                                <div id="submeter" class="carac">
+                                    <input type="submit" value="Submeter">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <div>
+        <!--Botão de regressar ao início da página-->
+        <button id="inicio"><svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+            </svg></button>
+        <!--Botões de Doar e Voluntariado-->
+        <div class="botoesLat">
+            <nav>
+                <a class="botao" id="doar" href="Missoes.html#formDoar">Doar</a>
+                <a class="botao" id="volt" href="Missoes.html#formVoluntariado">Voluntariado</a>
+            </nav>
+        </div>
+    </div>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="textoFooter" id="contactos">
+            <h4 class="tituloFooter">Contactos</h4>
+            <ul>
+                <li>Email: pequenosherois@aph</li>
+                <li>Telefone: +(239)9123917916</li>
+                <li>Morada: Rua do Brasil, Coimbra</li>
+            </ul>
+        </div>
+
+        <div class="textoFooter" id="servicos">
+            <h4 class="tituloFooter">Serviços</h4>
+            <ul>
+                <li>Relatar problemas de segurança</li>
+                <li>Informe infração dos direitos humanos</li>
+                <li>Aviso de marca registrada</li>
+            </ul>
+        </div>
+
+        <div class="textoFooter" id="seguranca">
+            <h4 class="tituloFooter">Segurança</h4>
+            <ul>
+                <li>Desenvolvimento académico e social</li>
+                <li>Advocacia e defesa</li>
+                <li>Empoderamento e habilidades</li>
+            </ul>
+        </div>
+        <img class="logoF" src="Imagens/Homepage/Logo-S.png" width="90" height="30" alt="logo_da_fundacao">
+
+        <p>COPYRIGHT © 2023 Associação Pequenos Heróis</p>
+    </footer>
+
+    <script src="JavaScript/comum.js"></script>
+    <script src="JavaScript/botaoLerMais.js"></script>
+    <script src="JavaScript/carrossel.js"></script>
+</body>
+
+</html>
