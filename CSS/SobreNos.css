@@ -1,0 +1,447 @@
+/* Esta folha CSS é apenas para conteúdo editado da página Sobre Nós*/
+
+.textoEscondido{
+    display: none;
+  }
+  
+  #btnOne{/*botão de ler mais*/
+    width: 100px;
+    height: 30px;
+    border:none;
+    background-color:#21abe3;
+    border-radius:25px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color:white;
+    cursor: pointer;
+  }
+  
+  /*-------------------vídeo-------------------------*/
+  .video{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .videoSobre{
+    margin-top: 95px;
+  }
+  
+  /*------------------Nome do Membro da Equipa---------------*/
+  .nomeMembro {
+    position: relative;
+    bottom: 20px;
+    left: 70px;
+    opacity: 1;
+  }
+  
+  .infoMembro {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    opacity: 0;
+    font-size: 13px;
+  }
+  
+  /*--------------------- scroll --------------------*/
+  .botoes_Scroll{
+    cursor: pointer;
+  }
+  
+  .botaoScroll {
+    border: none;
+    position: absolute;
+    top: 175px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #3bce3b; 
+    z-index: 2;
+  }
+  
+  #botoes_Scroll_Esq{
+   display: none;
+  }
+  
+  #botaoScrollDrt{
+   transform: translatex(1656%);
+  }
+  
+  .seta{
+   position: absolute;
+   padding: 10px;
+   box-shadow: 2px -2px 0 1px white inset;
+   border-radius: 2px;
+   top: 190px;
+   z-index: 3;
+  }
+  
+  #setaEsq{
+    transform:  translateX(80%) rotate(45deg);
+  }
+  
+  #setaDrt{
+    transform: translateX(4205%) rotate(-135deg);
+  }
+  
+  .carroussel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stiker{
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    right: 0;  
+    opacity: 0;  
+    width: 300px;
+    height: 380px; 
+  }
+  
+  
+  .cor{  
+    position: absolute;
+    top: 35px;
+    margin-left: 95px;  
+    width: 150px;  
+    opacity: 0;
+  }
+  
+  .cor1{
+    background-color: #f69518;
+    height: 225px;
+  }
+  
+  .cor2{  
+    background-color:  #08cde4; 
+    height: 225px;
+  }
+  
+  .legenda {
+    position: relative;
+    top: 15px;
+    padding: 10px;
+    width: 135px;
+    font-size: 13px;
+  }
+  
+  .card:hover .imagem{/*quando o rato está por cima a imagem desaparece*/
+    opacity: 0;  
+  }
+  
+  .card:hover .nomeMembro{/*quando o rato está por cima a imagem desaparece*/
+    opacity: 0;  
+    transition: 0.5s ease;
+  }
+  
+  .card:hover .stiker{/*quando o rato está por cima a imagem dos stickers aparece*/
+    opacity: 1;
+    transition: 0.6s ease;
+  }
+  
+  .card:hover .infoMembro{/*quando o rato está por cima a imagem desaparece*/
+    opacity: 1;  
+  }
+  
+  .card:hover .cor{/*quando o rato está por cima o retângulo de cor aparece*/
+    opacity: 1;
+  }
+  
+  .scroll .imagem{
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 70px;
+    margin-right: 0px;
+  }
+  
+  #ultimaImg{
+    width: 250px;
+  }
+  
+  .scroll {
+    width: 810px;
+    padding-top: 3em;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+  
+    overflow: scroll;
+    scroll-behavior: smooth;
+    height: 365px; 
+  }
+  
+  .card {/*faz com que as imagens dos stickers fiquem localizadas no sítio correto*/
+    display: inline;
+    position: relative;
+  }
+  
+  .scroll::-webkit-scrollbar{/*deixa de desenhar a barra horizontal de scroll*/
+    display: none;
+  }
+  
+  
+  /*----------------------Formulários----------------------*/
+  .ContentorForm{
+    height: 550px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  
+  .formSobre{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 15% auto;
+    background-color: #95da95;
+    box-shadow: 1px 1px 6px grey;  
+  }
+  
+  .conteudoForm{/*valor do formulário form*/
+    width: 100%;
+    height: 100%; /*largura do formulário*/
+    display: grid;
+    grid-template-areas: 
+    'NOME DATA'
+    'TEL EMAIL'
+    'AREA AREA'
+    'FORM_V FORM_V'
+    'FORM_Q FORM_Q'
+    'SUBM SUBM'; 
+  }
+  
+  #nome{
+    grid-area: NOME;
+  }
+  
+  #data{
+   grid-area: DATA;
+  } 
+  
+  #Tel{
+   grid-area: TEL;
+  }
+  
+  #CAIXA_MAIL{
+   grid-area: EMAIL;
+  }
+  
+  #LOCAL{
+    grid-area: AREA;
+  }
+  
+  #Formacao_EMP{
+    grid-area: FORM_V;
+  }
+  
+  #Formacao_esc{
+    grid-area: FORM_Q;
+  }
+  
+  #submeter{
+    grid-area: SUBM;
+  }
+  
+  .carac{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 25px;
+   }
+  
+   .caracF{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+   }
+  
+   label{
+    font-size: 13px;
+    position: absolute;
+    display: inline;
+    transform: translate(0%,-170%);
+  }
+  
+  .conteudoForm{/*valor do formulário form*/
+    position: relative; 
+  }
+  
+  .conteudoForm input, select{  
+    position: relative;
+    width: 85%; /*largura das caixas de texto formularios*/
+    height: 50%;
+    border: 2px solid #27a027;   
+    background-color:  white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px grey;
+    font-size: 11px;
+  }
+  
+  #area, #formacao{
+    width: 93%;
+  }
+  
+  #data{
+    width: 90%;
+  }
+  
+  #selecao{
+    width: 45%;
+    position: relative;
+    border: 2px solid #27a027
+  }
+  
+  #submeter{/*respetivo ao botão submeter*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    transform: translate(0%,-10%);
+  }
+  
+  .tituloForm{
+      font-family: 'Lilita One', sans-serif;
+      font-size: 30px;
+      color: #27a027; 
+  }
+  
+  .question{
+    transform: translate(0%,-150%);
+  }
+  
+  input[type="submit"]{/*respetivo ao botão submeter*/
+    background-color: #27a027;
+    color: white;  
+    width: 30%;
+    height: 50%;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  input::placeholder, select{
+    color: #bebcbc;  
+    font-style: italic;
+    padding-left: 10px;
+  }
+  
+  /*------------------Nome das Secções-----------------------*/
+  .nomeSeccao{/*estiliza os títulos das secções notícias e heróis*/
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 200;
+  }
+  
+  #nomeSeccaoE{
+    margin-top: 170px;
+    padding-left: 250px;
+    text-align: start;
+  }
+  
+  #nomeSeccaoF{
+    margin-top: 130px;
+    padding-left: 250px;
+    text-align: start;
+  }
+  
+  #textoFinal{
+    margin-top: 5%;
+  }
+  
+  
+  /*-------A Partir daqui o código é dedicado à versão de telemóvel-------------------*/
+  @media(max-width: 576px){
+  
+   /*---------------------Vídeo------------------------*/ 
+  .videoSobre{
+    width: 250px;
+    height: 150px;
+    margin-top: 50px;
+  }
+  
+  /*----------------------Formulários--------------------*/
+  .ContentorForm{
+    width: 100%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  
+  .carac{
+    margin-left: 19px;
+  }
+  
+  .caracF{
+    margin-left: 19px;
+  }
+  
+  #data{
+    width: 90%;
+  }
+  
+  /*----------------------Nome Secções------------------*/
+  .nomeSeccao{
+    font-size: 30px;
+    width: 70%;
+  }
+  
+  #nomeSeccaoE{
+    margin-top: 150px;
+    padding-left: 80px;
+  }
+  
+  #nomeSeccaoF{
+    margin-top: 70px;
+    padding-left: 80px;
+  }
+  
+  #textoFinal{
+    margin-top: 10%;
+  }
+  
+     .scroll .imagem{
+        height: 243px;
+        width: 162px;
+      }
+  
+      .scroll {
+        width: 290px;
+        padding-top: 3em;
+      }
+  
+      .botaoScroll {
+        border: none;
+        position: absolute;
+        top: 150px;
+      }
+  
+      .seta{
+        top: 165px;
+      }
+  
+      #botaoScrollDrt{
+        transform: translateX(500%);
+      }
+      #setaDrt{
+        transform: translateX(1300%) rotate(-135deg);
+      }
+  
+      #ultimaImg{
+        left: 40px;
+      }
+  
+      .nomeMembro {
+        bottom: 80px;
+      }  
+  
+     .infoMembro {
+       right: 0px;
+     } 
+  }

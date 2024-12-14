@@ -1,0 +1,236 @@
+/*Esta folha de estilos é dedicada apenas a conteúdo da página Heróis*/
+
+/*-------------------Retângulos----------------------*/
+.retangulos{ 
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 260px;
+    height: 5px;
+    background-color: #21abe3;
+  }
+  
+  #first{  
+   margin-top: 200px;
+   top: 20px;
+  }
+  
+  #second{  
+    top: 250px;
+  }
+  
+  /*-------------------Citação-------------------------*/
+  .fraseInsp{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 23px;
+    padding-bottom: 140px;
+  
+    text-align: center;
+    font-size: 50px;
+    font-weight:200;
+    font-family: 'Roboto Slab', sans-serif;
+    width:750px;
+  
+    color:#21abe3;
+  }
+  
+  /*-----------------Barra de Pesquisa------------------*/
+  #lupa{
+    position: relative;
+    top: 10px;
+    left: 0px;
+  }
+  
+  .barraPesquisa{ 
+    display: flex;
+    justify-content: center;
+    margin-left: -346px;
+    width: 100%;
+  }
+  
+  .barra{  
+    background-color: #95da95;
+    border: 2px solid #27a027;  
+    border-radius: 5px;
+    
+    height: 50px;
+    width: 220px;
+    margin-top: 100px;
+  }
+  
+  .pesquisa{
+    position: relative;
+    border: 2px solid #27a027;  
+    border-radius: 5px;
+  
+    margin-top: 6.5px;
+    margin-left: 6.5px;
+    height: 30px;
+  }
+  
+  /*------------------Galeria de Imagens---------------*/
+  .card {/*faz com que o texto fique dentro de cada imagem que lhe correponde*/
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .legenda{
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    opacity: 0; 
+    font-size: 15px;
+  }
+  
+  .nome{
+    position: absolute;
+    opacity: 0;
+    bottom: 5px;
+    right: 20px;
+  }
+  
+  #nameBea{
+    position: absolute;
+    top: 245px;
+  }
+  
+  #nameTwins{
+    position: absolute;
+    top: 245px;
+  }
+  
+  .linhas {  
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  #primeiraLinha{ 
+    padding-top: 2em;
+    top: 20px;
+  }
+  
+  #segundaLinha {
+    top: 40px;
+  }
+  
+  #terceiraLinha {
+    top: -165px;
+    margin-left: -110px;
+  }
+  
+  #quartaLinha {
+    top: -145px;
+  }
+  
+  #quintaLinha {
+    top: -124px;
+    margin-bottom: 17px;
+  }
+  
+  .card:hover .legenda {
+    opacity: 1;
+  }
+  
+  .card:hover .nome{
+    opacity: 1;
+  }
+  
+  .card:hover .imagem{
+    opacity: 0.2;
+  }
+  
+  /*-------------------A partir daqui o código refere-se à versão de telemóvel--------------------*/
+  @media(max-width: 576px){  
+  
+  /*------------------retângulos---------------*/
+  .retangulos{  
+    width: 200px;
+    height: 3px;
+    background-color: #21abe3;
+  }
+    
+  #first{ 
+    margin-top: 200px;
+    top: -100px;
+  }
+  
+  #second{  
+    top: 110px;
+  }
+  
+  
+  /*-------------------------citação----------------------*/
+  .frase{
+    margin-top: -110px;
+  }
+  
+  .fraseInsp{
+    font-size: 30px;
+    width:290px;
+    top: 55px; /*posição da frase verticalmente*/  
+  }
+  
+  /*--------------------barra de pesquisa-----------------*/
+  .pesquisa{
+    width: 160px;
+  }
+  
+  .barra{
+    margin-top: 60px;  
+  }
+  
+  .barraPesquisa{ 
+    margin-left: -37px;
+    width: 100%;
+  }
+  
+  /*--------------------galeria de Imagens----------------*/
+  .legenda{
+    display: none;
+  }
+  
+  .nome{
+    top: 10px;
+    right: 13px;
+    width: 110px;
+  }
+  
+  #nameBea{
+    position: absolute;
+    top: 10px;
+  }
+  
+  #nameTwins{
+    position: absolute;
+    top: 10px;
+  }
+  
+  .linhas {  
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);   
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #terceiraLinha {
+    margin-top: 225px;
+    top: -165px;
+    margin-left: 0px;
+  }
+  
+  #threeL2{
+    display:none;
+  }
+  
+  }
+  
+  
+  
+    

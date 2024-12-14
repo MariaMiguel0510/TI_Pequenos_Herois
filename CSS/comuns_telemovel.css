@@ -1,0 +1,115 @@
+/*Regular:400 | SemiBold:600 | ExtraLight: 200 | Italica:400*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/*Fonte títulos sobre imagens*/
+
+@media(max-width: 576px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  /*-----------------Cabeçalho-----------------*/
+  header {
+    height: 0px;
+  }
+
+  .logoH {
+    /*só o logo (no Header) é que está à esquerda*/
+    top: 35px;
+    left: 10%;
+  }
+
+  .menu>a {
+    margin: 5px;
+    padding-left: 50px;
+    left: 0px;
+    color: #0c749d;
+    font-size: 15pt;
+  }
+
+  .menu>a:hover {
+    text-decoration: underline #0c749d;
+  }
+
+  .burguerBotao {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    left: 75%;
+    top: 30px;
+    z-index: 2;
+  }
+
+  .burguerBotao>div {
+    height: 6px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f69518;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: end;
+    text-align: start;
+    flex-direction: column;
+    position: absolute;
+    width: 55%;
+    height: 100vh;
+    top: -50px;
+    padding-bottom: 50px;
+    left: -55%;
+    background-color: rgb(173, 216, 230, 0.95);
+    transition: left 1s;
+    z-index: 1;
+  }
+
+  .menu.show {
+    left: 0px;
+  }
+
+  /*------------------Rodapé-------------------*/
+  footer {
+    height: 520px;
+  }
+
+  /*------------------Botões-------------------*/
+  a.botao {
+    right: -35px;
+    height: 45px;
+  }
+
+  #doar {
+    top: 250px;
+  }
+
+  #volt {
+    top: 360px;
+  }
+
+  /*--------------Imagem Fundo Inicial--------------*/
+  .titulo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    top: 25%;
+  }
+
+  .titulo>h1 {
+    position: relative;
+    font-size: 50px;
+    letter-spacing: .1rem;
+  }
+
+  /*--------------Texto--------------*/
+  .textoMain {
+    margin-top: 20%;
+    margin-left: 15%;
+    width: 70%;
+  }
+}

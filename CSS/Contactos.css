@@ -1,0 +1,221 @@
+/* Esta folha CSS é apenas para conteúdo editado da página Contactos*/
+
+/*-------------------Citacao------------------*/
+.retangulos{ 
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 260px;
+    height: 5px;
+    background-color: #21abe3;
+  }
+  
+  #first{  
+   margin-top: 200px;
+   top: 20px;
+  }
+  
+  #second{  
+    top: 330px;
+  }
+  
+  .fraseInsp{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 23px;
+    padding-bottom: 250px;/*cria o espaçamento entre a citacao e a imagem seguinte*/
+  
+    text-align: center;
+    font-size: 50px;
+    font-weight:200;
+    font-family: 'Roboto Slab', sans-serif;
+    width:750px;
+    word-break: break-word;
+  
+    color:#21abe3;
+  }
+  
+  /*----------------Texto Sobre Img--------------------*/
+  .antesContactos>picture>img {
+    width:100%;
+    height:520px;
+    opacity: 0.8;
+  }
+  
+  .textoContactos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color:  black; 
+    z-index: 1;
+    margin-left: -68%;
+    top: -340px; 
+  }
+  
+  .textoContactos>h2{
+    position: relative;
+    font-weight:200;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 30px;
+    top: -70px; 
+    left: 200px;
+  }
+  
+  .textoContactos>ul>li{
+    list-style-type: none;
+    word-break: break-word;
+    text-align: center;
+    line-height: 30px; 
+  }
+  
+  
+  /*---------------------Imagem Mapa-----------------*/
+  #imgMapa{
+    position: relative;
+    width: 100%;
+    bottom: -7px;
+    margin-top: 0px;
+  }
+  
+  
+  /*---------------------Formulário---------------------*/
+  .tituloForm{
+     display: flex;
+     justify-content: center;
+     position: relative;
+     font-family: 'Lilita One', sans-serif;
+     font-size: 40px;
+     color:  #27a027; 
+     top: 70px;
+  }
+  
+  .formContactos{/*valores para o contentor div dos formulários*/
+    width: 100%;
+    height: 750px;
+    margin-top: -250px;
+    margin-bottom: -10px;
+    background-color: #95da95;
+  }
+  
+  .formulario{ /*valores para o contentor formulários individuais*/
+    width: 465px; /*largura do formulário*/  
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 60px;
+  }
+  
+  .conteudoForm input{    
+    width: 95%;
+    margin-top: 25px;
+    padding: 10px;    
+    border: 2px solid #27a027; ;
+    border-radius: 10px;
+  }
+  
+  .conteudoForm label{ 
+    position: relative;
+    font-size: 13px;
+    top: 25px;
+  }
+  
+  input::placeholder, select{
+    color: #bebcbc; 
+    font-style: italic;
+  }
+  
+  input[type="submit"]{/*respetivo ao botão submeter*/
+    width: 150px;
+    height: 45px;
+    background-color: #27a027;
+    color: white;  
+    margin-top: 40px;
+    margin-left: 150px;
+  
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  #mensagem{  
+    height: 100px; /*largura das caixas de texto formularios*/
+  }
+  
+  /*--A partir daqui o código refere-se à versão de telemóvel-*/
+  @media(max-width: 576px){  
+  
+  /*-----------------Citação---------------------*/
+  .frase{
+    margin-top: -110px;
+  }
+  
+  .fraseInsp{
+    font-size: 30px;
+    width:320px;
+    word-break: break-word;
+    top: 55px; /*posição da frase verticalmente*/  
+    padding-bottom: 150px;/*cria o espaçamento entre a citacao e a imagem seguinte*/
+  }
+  
+  .retangulos{  
+    width: 200px;
+    height: 3px;
+    background-color: #21abe3;
+  }
+  
+  #first{  
+    margin-top: 200px;
+    top: -100px;
+  }
+  
+  #second{  
+    top: 150px;
+  }
+  
+  
+  /*-----------------Formulário-------------------------*/
+  .formulario{ /*valores para o contentor formulários individuais*/
+    width: 265px; /*largura do formulário*/    
+  }
+  
+  .formContactos{/*valores para o contentor div dos formulários*/
+    position: relative;
+    height: 700px;
+    margin-top: -270px;
+  }
+  
+  .tituloForm{
+    font-size: 31px;
+  }
+  
+  .conteudoForm input{  
+    margin-top: 25px;      
+    border: 2px solid #27a027; 
+  }
+  
+  input[type="submit"]{/*respetivo ao botão submeter*/
+    width: 100px;
+    margin-left: 32%;
+    border-radius: 25px;
+    margin-top: 50px;
+  }
+  
+  
+  /*----------------Texto Sobre Img--------------------*/
+  .textoContactos{
+    font-size: 11.5px;
+    margin-left: -24.5%; 
+    top: -380px; 
+  }
+  
+  .textoContactos>h2{
+    font-size: 25px;
+    top: -70px; 
+    left: 180px;
+  }
+  
+  .textoContactos>ul>li{
+    line-height: 25px; 
+  }
+  }

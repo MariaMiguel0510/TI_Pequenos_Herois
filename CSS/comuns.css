@@ -1,0 +1,172 @@
+/*Regular:400 | SemiBold:600 | ExtraLight: 200 | Italica:400*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');/*Fonte títulos sobre imagens*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');/*Fonte citações*/
+
+body{
+ font-family: 'Poppins', sans-serif; 
+ font-weight: 400;
+ margin: 0px;
+}
+
+header, footer{
+  background-color: #21abe3;  
+  width: 100%;
+  height: 100px;
+}
+
+/*esta condição faz com que haja um efeito suave no scroll quando carregamos nos botões laterais e no botão de voltar ao início*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*-----------------Cabeçalho-----------------*/
+.logoH{/*só o logo (no Header) é que está à esquerda*/
+  position: absolute;
+  left: 7%;
+  top: 27px;
+  z-index: 1;
+}
+
+.menu>a{ /*é o nav*/
+  position: relative;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color:  #f0f9fd;
+  right: -50%;
+  top: 23px;
+  margin: 15px;/*espaço entre as palavras*/
+}
+
+.menu>a:hover{
+  text-decoration: underline #f0f9fd;
+  text-underline-offset:10px;
+}
+
+.burguerBotao{
+  display: none;
+}
+
+/*------------------Rodapé-------------------*/
+footer{
+  text-align:center;
+  height: 250px;
+}
+
+h4.tituloFooter{
+  color:  #f0f9fd;
+}
+
+div.textoFooter{
+  display: inline-block;
+  width: 370px;
+  margin-top:10px;
+}
+
+div.textoFooter>ul{
+  font-weight:400;
+  font-size: 12px;
+  list-style-type: none;
+  margin-top: -10px;
+  margin-right: 43px; /*ajuste na centralização dos títulos*/
+}
+
+img.logoF{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+footer>p{
+  margin: 0px;
+  margin-top: 25px;
+  font-size: 10px;
+}
+
+
+/*------------------Botões-------------------*/
+div.botoesLat>nav>a{
+  line-height: 3em;
+  display: inline-block;
+  color: #f0f9fd;
+  text-align: center;
+  text-decoration:none;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600;
+  z-index: 3;
+}
+
+a.botao{
+  position: fixed;
+  width: 100px;
+  height: 60px;
+  right: -40px;
+  transform: rotate(270deg);
+  background-color: #f69518;
+  border-radius: 10px; 
+}
+
+#doar{
+  top: 230px;
+}
+
+#volt{  
+  top: 340px;
+}
+
+/*--------------Imagem Fundo Inicial--------------*/
+.imgInicio>picture>img {
+  width:100%;
+  height:50%;
+  filter: brightness(60%);
+}
+
+.titulo>h1{
+    position: absolute;
+    width: 100%;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 120px;
+    color:  #f0f9fd; 
+    text-align: center;
+    top: 30%;
+    letter-spacing: .2rem;
+  }
+
+/*--------------Texto--------------*/
+.textoMain{
+  font-size: 15px;
+  margin-top: 8%;
+  margin-left: 25%;
+  width: 50%;
+  text-align: start;
+}
+
+/*---------------botão regressa inicio página---------------*/
+#inicio {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  height: 50px;
+  background: #f85db0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#inicio>svg{
+  fill: white;
+}
+
+#inicio:hover{
+  box-shadow: 0.5px 1px 5px grey;
+  width: 50px;
+  height: 50px;
+}

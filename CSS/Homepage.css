@@ -1,0 +1,297 @@
+/* Esta folha CSS é apenas para conteúdo editado da Página Inicial (Homepage)*/
+
+/*--------------------Introdução-------------------*/
+.videoHP {
+    width:100%;  
+    height: 100%;
+    filter: brightness(80%);
+  }
+  
+  .tituloHP{
+    color: #f69518;
+    position: absolute;
+    top: 110px;
+    margin-left: 100px;
+    font-size: 100px;
+  }
+  
+  .subtituloHP{
+    color: white;
+    position: absolute;
+    top: 330px;
+    margin-left: 100px;
+    font-size: 40px;
+    width: 60%;
+    word-break: break-word;
+  
+    line-height: 50px;
+  }
+  
+  /*----------------------Slogan-----------------------*/
+  .slogan{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  
+  .slogan>h3{
+    position: relative;
+    transform: translate(0, 20px);
+    font-style: italic;
+    font-size: 40px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 200;
+    color:black;
+  }
+  
+  .slogan>div{
+    transform: translate(0, 10px);
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    height: 5px;
+    background-color: #f3bf29;
+  }
+  
+  .slogan>p{
+    transform: translate(0, 20px);
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    word-break: break-word;
+  }
+  
+  
+  /*--------------------Como Funcionamos------------------*/
+  .passos{  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f9fd;
+    height: 600px;
+  }
+
+  
+  .passoCont{
+    width: 47%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+  
+  
+  .passoCont>h2{
+    position: relative;
+    margin-top: 0px;
+    color:#21abe3;
+    font-weight: 200;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .passoCont>ul{
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  } 
+
+  .topico{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  /*--------------Secções das Notícias e Heróis------------*/
+  .noticias{/*secção das notícias*/
+    margin-top: 150px;
+  }
+  
+  .herois{/*secção dos heróis*/
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  
+  .nomeSeccao{/*estiliza os títulos das secções notícias e heróis*/
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 200;
+  }
+  
+  #nomeSeccaoN{
+   transform: translateX(-350px);
+  }
+  
+  #nomeSeccaoH{
+   transform: translateX(-365px);
+  }
+  
+  .linhas {  
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .fundoLetreiro{/*desenha o fundo dos retângulos com as informações das imagens das notícias e heróis*/
+    width: 200px;
+    height: 150px;
+    background-color: #b4eef5;
+    margin-top: -30px;
+  }
+  
+  .letreiro{/*texto dos retângulos com as informações das imagens das notícias e heróis*/
+    position: relative;
+    top: 15px;
+    width: 180px;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: 'Roboto Slab', sans-serif;
+  }
+  
+  .separacao{/*desenha as linhas pretas à frente de heróis e notícias*/
+    margin-top: -10px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 860px;
+    height: 5px;
+    background-color: black;
+  }
+  
+  /*--A partir daqui o código refere-se à versão de telemóvel-*/
+  @media (max-width: 576px){
+  
+  header{
+    height: 90px;
+  }
+  
+  /*-----------------------Introdução------------------*/
+  .containerVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    overflow: hidden;
+  }
+  
+  .videoHP{
+    width: auto;
+    height: 100vh;
+  }
+  
+  .tituloHP{
+    top: 100px;
+    margin-left: 20px;
+    font-size: 380%;
+    line-height: 65px;
+  }
+  
+  .subtituloHP{
+    transform: translateY(-15%);
+    margin-left: 23px;
+    font-size: 180%;
+    width: 60%;
+    word-break: break-word;
+    line-height: 120%;
+  }
+  
+  /*--------------------Slogan-----------------*/
+  .slogan{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .slogan>h3{
+    font-size: 17px;
+    transform: translateY(5px);
+  }
+  
+  .slogan>div{ 
+    top: 0px;
+    width: 150px;
+    height: 3px;
+    transform: translateY(10px);
+  }
+  
+  .slogan>p{
+    width: 75%;
+    font-size: 13px;
+    transform: translateY(15px);
+  }
+  
+    
+  /*--------------------Como Funcionamos-----------------*/
+  .passos{/*altura do fundo azul claro*/
+    height: 600px;
+  }
+  
+  .passoCont>h2{/*posição título "como funcionamos"*/
+    font-size: 30px;
+  }
+  
+  .passoCont{
+    width: 66%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .passoCont>ul{
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 3.1vw;
+  } 
+  
+   
+  
+  /*--------------Secções das Notícias e Heróis------------*/
+  .linhas {  
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);   
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .fundoLetreiro{
+    width: 142px;
+  }
+  
+  .letreiro{
+    top: 15px;
+    width: 135px;
+    font-size: 15px;
+    margin-left: 7px;
+  }
+  
+  .separacao{
+    width: 304px;
+  }
+  
+  #nomeSeccaoN{
+    transform: translateX(-90px);
+  }
+  
+  #nomeSeccaoH{
+    transform: translateX(-105px);
+  }
+  
+  .nomeSeccao{
+    font-size: 30px;
+  }
+  }
+  
