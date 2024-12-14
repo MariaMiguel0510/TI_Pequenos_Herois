@@ -59,7 +59,7 @@
     position: absolute;
     width: 55%;
     height: 100vh;
-    top: -50px;
+    top: -70px;
     padding-bottom: 50px;
     left: -55%;
     background-color: rgb(173, 216, 230, 0.95);
@@ -97,7 +97,8 @@
     justify-content: center;
     text-align: center;
     width: 100%;
-    top: 25%;
+    height: 55%;
+    top: 0;
   }
 
   .titulo>h1 {
