@@ -437,6 +437,10 @@
         left: 40px;
       }
   
+      .nomeMembro {
+        display: none;
+      }  
+  
      .infoMembro {
        right: 0px;
      } 
