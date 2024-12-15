@@ -16,8 +16,8 @@
 
   .logoH {
     /*só o logo (no Header) é que está à esquerda*/
-    top: 30px;
-    left: 10%;
+    display: flex;
+    align-items: center;
   }
 
   .menu>a {
